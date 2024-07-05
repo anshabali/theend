@@ -1,0 +1,23 @@
+body{font-family: 'Fira Sans', sans-serif;}
+.bg-black{background-color: black;}
+.custom-font-h3{font-size: 40px;}
+.home-slider h2{ font-size: 48px; line-height: normal;}
+.home-slider .btn-outline-light{font-size: 22px; line-height: normal;}
+.about-section p{ font-size: 16px; line-height: 28px;}
+.service-box h4{font-size: 24px;}
+.contact-box .form-control{ height:50px;}
+.contact-box textarea.form-control{ height:150px;}
+.address-box p{ font-size: 16px; line-height: 28px;}
+
+
+@media(max-width:767px){
+    .header-section .navbar-brand img {
+        width: 200px;
+    }
+}
+
+
+footer img{
+  width: 250px;
+}
+<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#04ff00"><path d="m429-336 238-237-51-51-187 186-85-84-51 51 136 135Zm51 240q-79 0-149-30t-122.5-82.5Q156-261 126-331T96-480q0-80 30-149.5t82.5-122Q261-804 331-834t149-30q80 0 149.5 30t122 82.5Q804-699 834-629.5T864-480q0 79-30 149t-82.5 122.5Q699-156 629.5-126T480-96Zm0-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z"/></svg>
