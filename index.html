@@ -246,31 +246,34 @@
         <div class="col-lg-12">
           <h3 class=" text-uppercase pb-4 font-weight-bold custom-font-h3 text-center text-white pt-5">Contact Us</h3>
         </div>
+        
         <div class="col-lg-6 col-md-8">
-            <div class="contact-box">
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Enter Name" name="name" id="contact-name" onkeyup="validateName()">
-                  <span class="text-danger "  id="name-error"></span>
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control" placeholder=" Enter Number" name="phone" id="contact-phone" onkeyup="validatePhone()">
-                  <span  class="text-danger" id="phone-error"></span>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Enter Email" name="email" id="contact-email" onkeyup="validateEmail()">
-                  <span  class="text-danger" id="email-error"></span>
-                </div>
-                  <textarea class="form-control" placeholder="Message" name="message"  id="contact-message" onkeyup="validateMessage()"></textarea>
-                  <span  class="text-danger" id="message-error"></span>
-                </div>
-                <br>
-                <div class="form-group text-center">
-                  <button oneclick="return validateForm()" class="text-uppercase btn btn-danger " type="submit">Submit</button>
-                  <span class="text-danger" id="submit-error"></span> 
-                </div>
-              </form>
-            </div>
+          <div class="contact-box">
+            <form onsubmit="return validateForm()">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Enter Name" name="name" id="contact-name" onkeyup="validateName()">
+                <span class="text-danger" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" placeholder="Enter Number" name="phone" id="contact-phone" onkeyup="validatePhone()">
+                <span class="text-danger" id="phone-error"></span>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Enter Email" name="email" id="contact-email" onkeyup="validateEmail()">
+                <span class="text-danger" id="email-error"></span>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" placeholder="Message" name="message" id="contact-message" onkeyup="validateMessage()"></textarea>
+                <span class="text-danger" id="message-error"></span>
+              </div>
+              <br>
+              <div class="form-group text-center">
+                <button class="text-uppercase btn btn-danger" type="submit">Submit</button>
+                <span class="text-danger" id="submit-error"></span>
+              </div>
+            </form>
+          </div>
+        </div>
             
         <div class="col-lg-6 col-md-4">
           <div class="address-box text-white text-center text-md-left pl-lg-5">
