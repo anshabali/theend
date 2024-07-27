@@ -3,7 +3,7 @@ function validateName() {
     const name = document.getElementById('contact-name').value;
     const error = document.getElementById('name-error');
     if (name.trim() === '') {
-      error.textContent = 'Name is required';
+      error.textContent = '*Name is required';
       return false;
     } else {
       error.textContent = '';
@@ -15,7 +15,7 @@ function validateName() {
     const phone = document.getElementById('contact-phone').value;
     const error = document.getElementById('phone-error');
     if (phone.trim() === '') {
-      error.textContent = 'Phone number is required';
+      error.textContent = '*Phone number is required';
       return false;
     } else {
       error.textContent = '';
@@ -28,10 +28,10 @@ function validateName() {
     const error = document.getElementById('email-error');
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (email.trim() === '') {
-      error.textContent = 'Email is required';
+      error.textContent = '*Email is required';
       return false;
     } else if (!emailRegex.test(email)) {
-      error.textContent = 'Invalid email format';
+      error.textContent = ' *Invalid email format';
       return false;
     } else {
       error.textContent = '';
@@ -43,7 +43,7 @@ function validateName() {
     const message = document.getElementById('contact-message').value;
     const error = document.getElementById('message-error');
     if (message.trim() === '') {
-      error.textContent = 'Message is required';
+      error.textContent = '*Message is required';
       return false;
     } else {
       error.textContent = '';
@@ -61,7 +61,6 @@ function validateName() {
       alert('Form submitted successfully!');
       return true;
     } else {
-      document.getElementById('submit-error').textContent = 'Please fill out all fields correctly.';
       return false;
     }
   }
